@@ -57,7 +57,7 @@ onMount(() => {
             value={apiKey}
           />
         </p>
-        <button on:click={()=>{apiKey = "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"}}>Use Demo Key</button>
+        <button on:click={()=>{apiKey = import.meta.env.VITE_API_KEY}}>Use Demo Key</button>
         <p class="control">
           <button class="button is-info" type="submit">Save</button>
         </p>
